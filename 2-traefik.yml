@@ -13,9 +13,10 @@ services:
     volumes:
       # So that Traefik can listen to the Docker events
       - /var/run/docker.sock:/var/run/docker.sock
-# We will need this on part 4.5
+      # Logs mount for log files
+      - C:\docker\logs:/dockerdata/logs
+# We will need this on part 4.5 for auth
 #      - C:\docker\mount:/mnt/basic-auth
-#      - C:\docker\logs:/dockerdata/logs
 #      # Traefik configuration file
 #      - C:\docker\traefik\traefik.yml:/etc/traefik/traefik.yml
 
