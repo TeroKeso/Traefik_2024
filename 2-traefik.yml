@@ -21,7 +21,7 @@ services:
 #      - C:\docker\traefik\traefik.yml:/etc/traefik/traefik.yml
 
 
-# 0 If you run this in Windows Computer you will need a environment variable
+# 0 If you run this in Windows Computer you will need a environment variable. Also you need to change ALL c:\ to /Users/YOURuserNAMEonMAC/docker 
     environment:
      - COMPOSE_CONVERT_WINDOWS_PATHS=1
 ###########################################################################
